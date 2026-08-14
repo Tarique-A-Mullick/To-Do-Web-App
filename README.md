@@ -34,6 +34,18 @@ creating, managing, completing and scheduling reminders for everyday tasks.
 ## ✦ PROJECT SHOWCASE ✦
 ## ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+<br>
+
+<img src="assets/taskflow-dashboard.png" width="900">
+
+<br>
+
+**TaskFlow — Main Dashboard**
+
+<br>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 </div>
 
 ## 📌 About The Project
