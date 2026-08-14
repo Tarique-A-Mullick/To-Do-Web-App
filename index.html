@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | To-Do App</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MAIN CONTAINER
+    ========================== -->
+
+    <main class="app-container">
+
+        <!-- Header -->
+        <header class="app-header">
+
+            <div>
+                <p class="eyebrow">DAILY PRODUCTIVITY</p>
+
+                <h1>Task<span>Flow</span></h1>
+
+                <p class="subtitle">
+                    Organise your day. One task at a time.
+                </p>
+            </div>
+
+            <div class="date-display" id="currentDate">
+                <!-- Date will be added by JavaScript -->
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+            ADD TASK
+        ========================== -->
+
+        <section class="add-task-section">
+
+            <form id="taskForm">
+
+                <div class="task-input-wrapper">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you need to do?"
+                        autocomplete="off"
+                        maxlength="150"
+                    >
+
+                    <!-- Optional Reminder -->
+                    <div class="reminder-wrapper">
+
+                        <label for="taskReminder">
+                            <span>⏰</span>
+                            Reminder
+                            <small>(optional)</small>
+                        </label>
+
+                        <input
+                            type="datetime-local"
+                            id="taskReminder"
+                        >
+
+                        <button
+                            type="button"
+                            id="clearReminder"
+                            class="clear-reminder-btn"
+                            title="Remove reminder"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" id="addTaskBtn">
+                    <span>+</span>
+                    Add Task
+                </button>
+
+            </form>
+
+            <p class="input-error" id="inputError"></p>
+
+        </section>
+
+
+        <!-- =========================
+             TASK DASHBOARD
+        ========================== -->
+
+        <section class="task-dashboard">
+
+
+            <!-- =====================
+                 PENDING TASKS
+            ====================== -->
+
+            <div class="task-section">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="section-label">TO DO</p>
+
+                        <h2>Pending Tasks</h2>
+                    </div>
+
+                    <div class="task-count pending-count">
+                        <span id="pendingCount">0</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Pending Tasks -->
+                <div
+                    class="task-list"
+                    id="pendingTasks"
+                >
+
+                    <!-- Empty state -->
+                    <div
+                        class="empty-state"
+                        id="pendingEmpty"
+                    >
+
+                        <div class="empty-icon">
+                            ✓
+                        </div>
+
+                        <h3>No pending tasks</h3>
+
+                        <p>
+                            You're all caught up!
+                            Add a new task to get started.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================
+                 COMPLETED TASKS
+            ====================== -->
+
+            <div class="task-section completed-section">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="section-label">DONE</p>
+
+                        <h2>Completed Tasks</h2>
+                    </div>
+
+                    <div class="task-count completed-count">
+                        <span id="completedCount">0</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Completed Tasks -->
+                <div
+                    class="task-list"
+                    id="completedTasks"
+                >
+
+                    <!-- Empty state -->
+                    <div
+                        class="empty-state"
+                        id="completedEmpty"
+                    >
+
+                        <div class="empty-icon">
+                            ✓
+                        </div>
+
+                        <h3>No completed tasks</h3>
+
+                        <p>
+                            Completed tasks will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="app-footer">
+
+            <p>
+                Stay focused. Get things done.
+            </p>
+
+            <button
+                id="clearCompleted"
+                class="clear-completed-btn"
+            >
+                Clear Completed
+            </button>
+
+        </footer>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
