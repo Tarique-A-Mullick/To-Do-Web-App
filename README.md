@@ -55,15 +55,15 @@ to preserve task data between sessions.
 
 ### ⏰ Reminder System
 
-| Feature                  | Description                                  |
-| ------------------------ | -------------------------------------------- |
-| 🔔 Optional Reminder     | Add a reminder only when needed              |
-| 📅 Date & Time           | Set a specific reminder date and time        |
-| ✏️ Edit Reminder         | Change an existing reminder                  |
+| Feature                   | Description                                  |
+| --------------------------| -------------------------------------------- |
+| 🔔 Optional Reminder      | Add a reminder only when needed              |
+| 📅 Date & Time            | Set a specific reminder date and time        |
+| ✏️ Edit Reminder          | Change an existing reminder                  |
 | ❌ Remove Reminder        | Remove a reminder from a task                |
-| 🔊 Alarm                 | Play an alarm when the reminder is triggered |
-| 🖥️ Browser Notification | Display a browser notification               |
-| 💾 Persistent Reminder   | Store reminder information in LocalStorage   |
+| 🔊 Alarm                  | Play an alarm when the reminder is triggered |
+| 🖥️ Browser Notification   | Display a browser notification               |
+| 💾 Persistent Reminder    | Store reminder information in LocalStorage   |
 
 ### 📊 Productivity Interface
 
@@ -214,7 +214,7 @@ TaskFlow follows a modern productivity-dashboard aesthetic.
 │                  TaskFlow                    │
 │                                              │
 │     ┌──────────────────────────────────┐     │
-│     │        Create New Task            │     │
+│     │        Create New Task           │     │
 │     └──────────────────────────────────┘     │
 │                                              │
 │     ┌────────────────┐ ┌────────────────┐    │
