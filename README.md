@@ -36,7 +36,7 @@ creating, managing, completing and scheduling reminders for everyday tasks.
 
 <br>
 
-<img src="assets/taskflow-dashboard.png" width="900">
+<img src="Screenshot 2026-08-14 194845.png" width="900">
 
 <br>
 
